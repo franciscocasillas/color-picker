@@ -1,10 +1,18 @@
 import "../stylesheets/ColorPicker.css";
 
-function ColorPicker({ color, onColorSelect }) {
+function ColorPicker({ colors, onColorSelect }) {
 	return (
-		<button className={color} onClick={() => onColorSelect(color)}>
-			{color}
-		</button>
+		<div>
+			{colors.map((color) => (
+				<button
+					key={color}
+					className={color}
+					onClick={() => onColorSelect(color)}
+				>
+					{color}
+				</button>
+			))}
+		</div>
 	);
 }
 

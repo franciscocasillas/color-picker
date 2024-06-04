@@ -9,7 +9,13 @@ function App() {
 	const handleColorSelect = (selectedColor) => {
 		console.log("Selected color:", selectedColor);
 		setSelectedColor(selectedColor);
-		document.body.style.backgroundColor = selectedColor;
+		if (selectedColor === "red") {
+			document.body.style.backgroundColor = "rgb(245, 106, 106)";
+		} else if (selectedColor === "green") {
+			document.body.style.backgroundColor = "rgb(75, 201, 109)";
+		} else {
+			document.body.style.backgroundColor = "rgb(67, 118, 199)";
+		}
 	};
 
 	return (

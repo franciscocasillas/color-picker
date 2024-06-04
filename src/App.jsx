@@ -7,9 +7,9 @@ function App() {
 	const [selectedColor, setSelectedColor] = useState("");
 
 	const handleColorSelect = (selectedColor) => {
-		console.log("Selected color:", selectedColorcolor);
-		setSelectedColor(selectedColorcolor);
-		document.body.style.backgroundColor = selectedColorcolor;
+		console.log("Selected color:", selectedColor);
+		setSelectedColor(selectedColor);
+		document.body.style.backgroundColor = selectedColor;
 	};
 
 	return (
